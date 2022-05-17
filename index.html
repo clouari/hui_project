@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test project</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <img class="logo" src="https://cdn.imweb.me/thumbnail/20200721/275273a70cc40.png">
+            <!-- 배경화면에 video 적용 -->
+            <video muted autoplay loop >
+                <source src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_tvc_event_mo.mp4">
+            </video>
+            <div>
+                <ul class="button_float">
+                  <li><button class="form float mb-3" style="border-radius: 50%;">1</button></li>
+                  <li><button class="form float" style="border-radius: 50%;">2</button></li>
+                </ul>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <input class="burger-check" type="checkbox" id="burger-check" />
+            <label class="burger-icon" for="burger-check">
+                <span class="burger-sticks"></span>
+            </label>
+            <!-- 햄버거 안에 메뉴 -->
+                <div class="menu">
+                    <div style="width: 100vw;" class="burger_menu">
+                        <div><img class="logo" src="https://cdn.imweb.me/thumbnail/20200721/275273a70cc40.png"></div>
+                        <ul class="customMenu">
+                            <li class="burger_in">
+                                <span><a href="./components/login.html">login</a></span>
+                                <span><a href="">Join</a></span>
+                                <span><a href="">상담문의</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
